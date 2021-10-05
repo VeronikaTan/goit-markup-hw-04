@@ -19,7 +19,7 @@
 
   <body>
     <!----------------HEADER--------------->
-      <header>
+    <header>
       <div class="container head-contacts">
         <nav class="navigation">
           <!---LOGO---------------------------------------->
@@ -40,46 +40,60 @@
         <!--------CONTACTS-HEAD--------------------------------->
 
         <ul class="list head-contacts">
-          <li><a href="" class="contacts-head"><svg class="mail-icon" width="16" height="12"><use href="../images/sprite.svg#mail"></use></svg></a>info@devstudio.com</a></li>
-          <li><a href="" class="contacts-head">+38 096 111 11 11</a></li>
+          <li>
+            <a href="" class="contacts-head"
+              ><svg class="mail-icon" width="16" height="12">
+                <use href="../images/sprite.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a href="" class="contacts-head">
+              <svg class="phone-icon" width="10" height="16">
+                <use href="../images/sprite.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
       </div>
     </header>
-
     <main>
       <section class="hero">
         <div class="hero-content">
-        <!-----------HEADEr HERO----------------->
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <!-----------BUTTON HERO---------------------->
-        <button type="button" class="button-hero">Заказать услугу</button>
+          <!-----------HEADEr HERO----------------->
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <!-----------BUTTON HERO---------------------->
+          <button type="button" class="button-hero">Заказать услугу</button>
         </div>
       </section>
-      
-        <div class="container section">
+
+      <section class="container">
+        <div class="advantages">
           <ul class="list qualities">
-            <li class="qualities-item ">
+            <li class="qualities-item">
               <h2 class="list-title sattelite">Внимание к деталям</h2>
               <p class="list-info">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="qualities-item ">
+            <li class="qualities-item">
               <h2 class="list-title clock">Пунктуальность</h2>
               <p class="list-info">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="qualities-item ">
+            <li class="qualities-item">
               <h2 class="list-title diagram">Планирование</h2>
               <p class="list-info">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="qualities-item ">
+            <li class="qualities-item">
               <h2 class="list-title astronaut">Современные технологии</h2>
               <p class="list-info">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -90,16 +104,17 @@
         </div>
       </section>
 
-      <section class="duties section">
-        <div class="container">
+      <section class="section container">
+        <div class="duties">
           <h3 class="job-info">Чем мы занимаемся</h3>
-        
+
           <ul class="list thumb-list">
             <li class="thumb">
               <img
                 src="./images/img.jpg"
                 alt="Рабочий стол разработчика"
-                width="370"/>
+                width="370"
+              />
             </li>
             <li class="thumb">
               <img
@@ -128,7 +143,32 @@
               <img src="./images/person1.jpg" alt="Наша команда" width="270" />
               <h4 class="person">Игорь Демьяненко</h4>
               <p class="position">Product designer</p>
+              <!-----------------------------------
+            ---------------------------------------->
+              <ul class="social-media list">
+                <li class="social-media-icon">
+                  <svg class="instagram" width="20" height="20">
+                    <use href="../images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </li>
+                <li class="social-media-icon">
+                  <svg class="twitter" width="20" height="20">
+                    <use href="../images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </li>
+                <li class="social-media-icon">
+                  <svg class="facebook" width="20" height="20">
+                    <use href="../images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </li>
+                <li class="social-media-icon">
+                  <svg class="linkedin" width="20" height="20">
+                    <use href="../images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </li>
+              </ul>
             </li>
+
             <li class="avatar">
               <img src="./images/person2.jpg" alt="Наша команда" width="270" />
               <h4 class="person">Ольга Репина</h4>
@@ -146,62 +186,83 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <section class="section container">
         <p class="clients-title">Постоянные клиенты</p>
-        
+
         <ul class="list list-clients">
           <li class="clients-list">
-            
+            <a href="" class="clients-link">
+              <svg class="list-icon" width="41" height="46">
+                <use href="../images/sprite.svg#icon-clients1"></use>
+              </svg>
+            </a>
           </li>
           <li class="clients-list">
-            <svg class="mail-icon" width="41" height="46">
-              <use href="../images/sprite.svg#clients1"></use></svg></li>
+            <a href="" class="clients-link">
+              <svg class="list-icon" width="39" height="34">
+                <use href="../images/sprite.svg#icon-clients2"></use>
+              </svg>
+            </a>
+          </li>
           <li class="clients-list">
-            <svg class="mail-icon" width="16" height="12">
-              <use href="../images/sprite.svg#mail"></use></svg></li>
+            <a href="" class="clients-link">
+              <svg class="list-icon" width="44" height="42">
+                <use href="../images/sprite.svg#icon-clients3"></use>
+              </svg>
+            </a>
+          </li>
           <li class="clients-list">
-            <svg class="mail-icon" width="16" height="12">
-              <use href="../images/sprite.svg#mail"></use></svg></li>
+            <a href="" class="clients-link">
+              <svg class="list-icon" width="84" height="41">
+                <use href="../images/sprite.svg#icon-clients4"></use>
+              </svg>
+            </a>
+          </li>
           <li class="clients-list">
-            <svg class="mail-icon" width="16" height="12">
-              <use href="../images/sprite.svg#mail"></use></svg></li>
+            <a href="" class="clients-link">
+              <svg class="list-icon" width="63" height="45">
+                <use href="../images/sprite.svg#icon-clients5"></use>
+              </svg>
+            </a>
+          </li>
           <li class="clients-list">
-            <svg class="mail-icon" width="16" height="12">
-              <use href="../images/sprite.svg#mail"></use></svg></li> 
-          <li class="clients-list">
-            <svg class="mail-icon" width="16" height="12">
-              <use xlink:href="../images/sprite.svg#mail"></use></svg></li> 
+            <a href="" class="clients-link">
+              <svg class="list-icon" width="93" height="44">
+                <use href="./images/sprite.svg#icon-clients6"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </section>
     </main>
     <footer class="page-footer">
       <div class="container container-footer">
         <div class="contact-info">
-        <!-----LOGO-FOOTER-------------------------------------->
-        <a href="" class="logo-footer"><span>Web</span>Studio</a>
+          <!-----LOGO-FOOTER-------------------------------------->
+          <a href="" class="logo-footer"><span>Web</span>Studio</a>
 
-        <address>
-          <!-----PLACE & CONTACTS-FOOTER----------------------->
-          <p class="place ">г. Киев Леси Украинки, 26</p>
-          <a href="mailto:info@devstudio.com" class="contacts-footer mail"
-            >info@devstudio.com</a
-          ><br/>
-          <a href="tel:+380961111111" class="contacts-footer phone"
-            >+38 096 111 11 11</a>
-        </address>
-      </div>
+          <address>
+            <!-----PLACE & CONTACTS-FOOTER----------------------->
+            <p class="place">г. Киев Леси Украинки, 26</p>
+            <a href="mailto:info@devstudio.com" class="contacts-footer mail"
+              >info@devstudio.com</a
+            ><br />
+            <a href="tel:+380961111111" class="contacts-footer phone"
+              >+38 096 111 11 11</a
+            >
+          </address>
+        </div>
         <div class="subsription-links">
-        <p class="subscription-text">Присоединяйтесь</p>
-        <ul class="social-network-list list">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        </ul>
+          <p class="subscription-text">Присоединяйтесь</p>
+          <ul class="social-network-list list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  
     </footer>
   </body>
 </html>

@@ -148,7 +148,7 @@ a {
 .head-contacts {
   display: flex;
   margin-left: auto;
-  align-items: center;
+  align-items: baseline;
 }
 header {
   border: 1px solid #ececec;
@@ -169,17 +169,24 @@ header {
   display: block;
   margin-left: 50px;
 }
+
 .header-nav {
   display: flex;
 }
-
+.mail-icon {
+  margin-right: 10px;
+}
+.phone-icon {
+  margin-right: 10px;
+  margin-left: 30px;
+}
 .current-page {
   color: var(--accent-color);
 }
 
 /*.................CONTACTS-HEAD...........*/
 
-.contacts-head {
+.head-contacts > li {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1;
@@ -187,7 +194,6 @@ header {
   list-style-type: none;
   text-decoration: none;
   font-weight: 500;
-  margin-right: 50px;
 }
 
 .contacts:hover,
@@ -271,6 +277,10 @@ header {
   margin-top: -30px;
 }
 
+.advantages {
+  padding-bottom: 0;
+  padding-top: 94px;
+}
 .qualities-item {
   margin-left: 30px;
   margin-top: 30px;
@@ -295,7 +305,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -30px;
+  margin-bottom: -30px;
 }
 .thumb {
   margin-left: 30px;
@@ -304,7 +314,7 @@ header {
   flex-basis: calc((100% - 90px) / 3);
 }
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--button-background-color);
 }
 .avatar-list {
   display: flex;
@@ -381,16 +391,47 @@ ul a:focus {
   font-size: 36px;
   color: var(--primary-text-color);
 }
+.list-icon {
+  align-content: center;
+  justify-content: center;
+}
+.clients-link {
+  width: 170px;
+  height: 92px;
+  fill: rgba(175, 177, 184, 1);
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.clients-link:hover,
+.clients-link:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
 .clients-list {
   width: 170px;
   border: 1px solid #afb1b8;
   height: 92px;
   flex-basis: calc((100% - 180px) / 6);
   border-radius: 4px;
-  background-color: var(--primary-background-color);
+  background-color: transparent;
   margin-bottom: 30px;
   margin-left: 30px;
+}
+.social-media {
+  display: flex;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+.social-media-icon {
+  border-radius: 50%;
+  fill: #afb1b8;
 }
 
 .list-clients {
