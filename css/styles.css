@@ -53,6 +53,7 @@ p {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 /*..........HEADER.....................................*/
 /*portfolio*/
@@ -67,15 +68,18 @@ a {
 .hero-title {
   font-weight: 900;
   color: var(--thirdparty-text-color);
-
   line-height: 1.16;
   font-size: 44px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
+  margin-bottom: 30px;
+}
+.hero-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 696px;
+  text-align: center;
   padding-top: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
 }
 /*styles*/
 .hero {
@@ -88,6 +92,7 @@ a {
     ),
     url("../images/background.jpg");
   min-width: 1200px;
+  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -110,8 +115,8 @@ a {
   padding-right: 32px;
   padding-bottom: 10px;
 
-  margin-bottom: 200px;
-  margin-top: 30px;
+  /*margin-bottom: 200px;
+  margin-top: 30px;*/
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -213,6 +218,7 @@ header {
   color: var(--secondary-text-color);
   margin-top: 10px;
   text-align: center;
+  margin-bottom: 30px;
 }
 .list-title {
   font-size: 14px;
@@ -230,25 +236,24 @@ header {
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
-  background-size: contain;
+  margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .sattelite::before {
   background-image: url("../images/sattelite.png");
-  /*background-size: 65.32px;*/
+  background-size: 65.32px;
 }
-.list-title:nth-child(2)::before {
+.clock::before {
   background-image: url("../images/clock.png");
   background-size: 65.32px;
 }
-
-.qualities-item:nth-child(3)::before {
+.diagram::before {
   background-image: url("../images/diagram.png");
   background-size: 65.32px;
 }
-.qualities-item:nth-child(4)::before {
+.astronaut::before {
   background-image: url("../images/astronaut.png");
   background-size: 65.32px;
 }
@@ -257,11 +262,11 @@ header {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  margin-top: 10px;
 }
 .qualities {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -288,7 +293,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-bottom: -30px;
+  margin-top: -30px;
 }
 .thumb {
   margin-left: 30px;
@@ -318,42 +323,39 @@ header {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  padding-top: 94px;
 }
-
-.pictures {
+.features-list {
+  margin-bottom: 50px;
+}
+.features {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
-  padding-bottom: 94px;
 }
-/**/
+
 .list-pic {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
-/*.list-pic:nth-last-child(n + 7) {
-  margin-bottom: 94px;
-}
-*/
+
 .underpicture {
   border: 1px solid #eeeeee;
+  padding-left: 24px;
+
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .description {
   color: var(--primary-text-color);
   list-style-type: none;
   font-weight: 700;
   font-size: 18px;
-
   line-height: 2;
   letter-spacing: 0.06em;
   list-style-type: none;
-  margin-top: 20px;
-  margin-left: 24px;
-
-  justify-content: space-evenly;
+  flex-wrap: nowrap;
 }
 
 .categories {
@@ -362,17 +364,39 @@ header {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
-  margin-left: 24px;
-
-  margin-top: 4px;
 }
 
 ul a:hover,
 ul a:focus {
   color: var(--accent-color);
 }
+.clients-title {
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 36px;
+  color: var(--primary-text-color);
+}
 
+.clients-list {
+  width: 170px;
+  border: 1px solid #afb1b8;
+  height: 92px;
+  flex-basis: calc((100% - 180px) / 6);
+  border-radius: 4px;
+  background-color: var(--primary-background-color);
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.list-clients {
+  align-items: center;
+  display: flex;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
 /*........FOOTER...................................*/
 
 footer {
@@ -406,6 +430,7 @@ footer {
 
 address {
   font-style: normal;
+  padding-right: 0;
 }
 
 .contacts-footer {
@@ -416,19 +441,28 @@ address {
 .place {
   color: var(--thirdparty-text-color);
   cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 9px;
+  padding-top: 20px;
+  padding-bottom: 9px;
 }
-
+.container-footer {
+  display: flex;
+}
 .mail {
-  margin-bottom: 9px;
-  margin-top: 9px;
+  padding-bottom: 9px;
+  padding-top: 9px;
 }
 
 .phone {
-  margin-top: 9px;
+  padding-top: 9px;
 }
-
-span {
+.contact-info {
+  margin-right: 70px;
+}
+.subscription-text {
+  text-transform: uppercase;
+  color: var(--thirdparty-text-color);
+  text-align: baseline;
+}
+.span {
   color: var(--accent-color);
 }

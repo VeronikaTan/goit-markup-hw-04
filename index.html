@@ -19,7 +19,7 @@
 
   <body>
     <!----------------HEADER--------------->
-    <header>
+      <header>
       <div class="container head-contacts">
         <nav class="navigation">
           <!---LOGO---------------------------------------->
@@ -27,15 +27,13 @@
           <!----PAGE-NAVIGATION------------------------------>
 
           <ul class="list header-nav">
-            <li>
-              <a href="./index.html" class="page-navigation current-page"
-                >Cтудия</a
-              >
+            <li class="page-navigation current-page">
+              <a href="./index.html">Cтудия</a>
             </li>
-            <li>
-              <a href="./portfolio.html" class="page-navigation">Портфолио</a>
+            <li class="page-navigation">
+              <a href="./portfolio.html">Портфолио</a>
             </li>
-            <li><a href="" class="page-navigation">Контакты</a></li>
+            <li class="page-navigation"><a href="">Контакты</a></li>
           </ul>
         </nav>
 
@@ -50,37 +48,39 @@
 
     <main>
       <section class="hero">
+        <div class="hero-content">
         <!-----------HEADEr HERO----------------->
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <!-----------BUTTON HERO---------------------->
         <button type="button" class="button-hero">Заказать услугу</button>
+        </div>
       </section>
       
         <div class="container section">
           <ul class="list qualities">
-            <li class="qualities-item sattelite">
-              <h2 class="list-title">Внимание к деталям</h2>
+            <li class="qualities-item ">
+              <h2 class="list-title sattelite">Внимание к деталям</h2>
               <p class="list-info">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="qualities-item">
-              <h2 class="list-title">Пунктуальность</h2>
+            <li class="qualities-item ">
+              <h2 class="list-title clock">Пунктуальность</h2>
               <p class="list-info">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="qualities-item">
-              <h2 class="list-title">Планирование</h2>
+            <li class="qualities-item ">
+              <h2 class="list-title diagram">Планирование</h2>
               <p class="list-info">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="qualities-item">
-              <h2 class="list-title">Современные технологии</h2>
+            <li class="qualities-item ">
+              <h2 class="list-title astronaut">Современные технологии</h2>
               <p class="list-info">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -99,8 +99,7 @@
               <img
                 src="./images/img.jpg"
                 alt="Рабочий стол разработчика"
-                width="370"
-              />
+                width="370"/>
             </li>
             <li class="thumb">
               <img
@@ -147,24 +146,46 @@
             </li>
           </ul>
         </div>
+      </section> 
+      <section class="section container">
+        <p class="clients-title ">Постоянные клиенты</p>
+        <ul class="list-clients list">
+          <li class="clients-list"></li>
+          <li class="clients-list"></li>
+          <li class="clients-list"></li>
+          <li class="clients-list"></li>
+          <li class="clients-list"></li>
+          <li class="clients-list"></li> 
+        </ul>
       </section>
     </main>
-    <footer>
-      <div class="container">
+    <footer class="page-footer">
+      <div class="container container-footer">
+        <div class="contact-info">
         <!-----LOGO-FOOTER-------------------------------------->
         <a href="" class="logo-footer"><span>Web</span>Studio</a>
 
         <address>
           <!-----PLACE & CONTACTS-FOOTER----------------------->
-          <p class="place">г. Киев Леси Украинки, 26</p>
+          <p class="place ">г. Киев Леси Украинки, 26</p>
           <a href="mailto:info@devstudio.com" class="contacts-footer mail"
             >info@devstudio.com</a
-          ><br />
+          ><br/>
           <a href="tel:+380961111111" class="contacts-footer phone"
-            >+38 096 111 11 11</a
-          >
+            >+38 096 111 11 11</a>
         </address>
       </div>
+        <div class="subsription-links">
+        <p class="subscription-text">Присоединяйтесь</p>
+        <ul class="social-network-list list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        </ul>
+      </div>
+    </div>
+  
     </footer>
   </body>
 </html>
