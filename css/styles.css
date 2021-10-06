@@ -122,7 +122,10 @@ a {
   background-color: var(--accent-color);
   color: var(--button-background-color);
 }
-
+.contact-head:hover,
+.contact-headfocus {
+  color: var(--accent-color);
+}
 /*portfolio*/
 
 .button-menu:hover,
@@ -168,7 +171,10 @@ header {
   display: block;
   margin-left: 50px;
 }
-
+.navigation-row:hover,
+.navigation-row:focus {
+  color: var(--accent-color);
+}
 .header-nav {
   display: flex;
 }
@@ -378,16 +384,27 @@ header {
   letter-spacing: 0.03em;
 }
 
-ul a:hover,
-ul a:focus {
+.contacts-icon {
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.contacts-head:hover,
+.contacts-head:focus {
   color: var(--accent-color);
 }
+
+.contacts-head:hover .contacts-icon,
+.contacts-head:focus .contacts-icon {
+  fill: var(--accent-color);
+}
+
 .clients-title {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-size: 36px;
   color: var(--primary-text-color);
 }
@@ -421,13 +438,17 @@ ul a:focus {
   margin-left: 30px;
 }
 
-.clients-list:hover,
-.clients-list:focus {
-  fill: var(--thirdparty-text-color);
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
 
+.clients-link:hover .list-icon-clients,
+.clients-link:focus .list-icon-clients {
+  fill: var(--accent-color);
+}
 .list-icon:hover,
 .list-icon:focus {
   fill: var(--accent-text-color);
@@ -455,8 +476,6 @@ ul a:focus {
 .list-clients {
   align-items: center;
   display: flex;
-  margin-top: -30px;
-  margin-left: -30px;
 }
 /*........FOOTER...................................*/
 
@@ -498,6 +517,7 @@ address {
   color: var(--contacts-footer-color);
   text-decoration: none;
   display: inline-block;
+  padding-bottom: 9px;
 }
 .place {
   color: var(--thirdparty-text-color);
@@ -508,14 +528,7 @@ address {
 .container-footer {
   display: flex;
 }
-.mail {
-  padding-bottom: 9px;
-  padding-top: 9px;
-}
 
-.phone {
-  padding-top: 9px;
-}
 .contact-info {
   margin-right: 70px;
 }
@@ -560,3 +573,5 @@ span {
   display: flex;
   justify-content: center;
 }
+
+/* width:calc(100% -30) / 2 for footer */
