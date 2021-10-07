@@ -568,6 +568,7 @@ span {
 .social-network-icon-footer {
   display: block;
   align-self: center;
+  fill: var(--button-background-color);
 }
 .social-media {
   display: flex;
